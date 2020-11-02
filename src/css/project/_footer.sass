@@ -1,0 +1,165 @@
+.footer
+  background-color: #23174c
+  background-position: 50% 100%
+  background-repeat: no-repeat
+  background-image: url('../images/bg/footer.jpg')
+  background-size: cover
+  color: #fff
+  flex-shrink: 0
+  padding-top: 40px
+  padding-bottom: 40px
+  position: relative
+
+  @media(min-width: 768px)
+    padding-top: 75px
+    padding-bottom: 65px
+
+  &::after
+    @media(min-width: 768px)
+      background: url('../images/bg/wave_5.png') no-repeat 0 100% / 100% auto transparent
+      bottom: 0
+      content: ''
+      height: 100%
+      left: 0
+      position: absolute
+      top: auto
+      width: 100%
+      z-index: 1
+
+    @media(min-width: 1200px)
+      background-position: 0 calc(100% + 20px)
+
+  .container
+    position: relative
+    z-index: 2
+
+  &__inner
+    @media(min-width: 768px)
+      display: flex
+      justify-content: space-between
+
+    &:not(:last-child)
+      margin-bottom: 40px
+
+      @media(min-width: 768px)
+        margin-bottom: 65px
+
+  &__contacts
+    margin-bottom: 40px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      padding-left: 10px
+
+    h2
+      font-size: 18px
+      font-weight: 700
+      line-height: 26px
+
+    a
+      color: #fff
+      text-decoration: none
+
+      &:hover,
+      &:focus
+        text-decoration: underline
+
+  &__contact
+    background-position: 0 50%
+    background-repeat: no-repeat
+    background-color: transparent
+    color: #fff
+    font-size: 18px
+    padding-left: 30px
+
+    &:not(:last-child)
+      margin-bottom: 25px
+
+    &--address
+      background-image: url('../images/icons/pin.png')
+      font-size: 14px
+
+    &--email
+      background-image: url('../images/icons/envelope.png')
+
+    &--phone
+      background-image: url('../images/icons/phone_2.png')
+
+  &__form-block
+    h3
+      font-size: 15px
+      font-weight: 400
+      line-height: 1.73333
+      margin-bottom: 30px
+
+  &__form
+    display: flex
+    margin-bottom: 25px
+    width: 290px
+
+  &__form-input
+    border: 1px solid rgba(#fff, 0.5)
+    background-color: transparent
+    color: #fff
+    font-size: 14px
+    height: 45px
+    padding: 15px
+    transition: border-color 0.3s
+
+    &:focus
+      border-color: #fff
+
+    &::-webkit-input-placeholder
+      color: #fff
+      opacity: 0.5
+
+    &::-moz-placeholder
+      color: #fff
+      opacity: 0.5
+
+    &:-ms-input-placeholder
+      color: #fff
+      opacity: 0.5
+
+  &__form-submit
+    align-items: center
+    background-color: rgba(#fff, 0.5)
+    border: none
+    cursor: pointer
+    display: flex
+    height: 45px
+    justify-content: center
+    margin-left: 10px
+    padding: 0
+    transition: background-color 0.3s
+    width: 70px
+
+    &:hover,
+    &:focus
+      background-color: #fff
+
+  &__socials
+    display: flex
+    flex-wrap: wrap
+    list-style: none
+    margin: 0 0 -10px !important
+    padding: 0
+
+  &__socials-item
+    &:not(:last-child)
+      margin-right: 30px
+      margin-bottom: 10px
+
+  &__socials-link
+    align-items: center
+    color: #fff
+    display: inline-flex
+    font-size: 14px
+    height: 35px
+    min-width: 35px
+
+  &__copyright
+    font-size: 14px
+
+    @media(min-width: 768px)
+      text-align: center

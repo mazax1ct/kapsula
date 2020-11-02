@@ -1,0 +1,31 @@
+html
+  box-sizing: border-box
+  font-family: sans-serif
+  height: 100%
+
+*,
+*::after,
+*::before
+  box-sizing: inherit
+
+body
+  display: flex
+  flex-direction: column
+  height: 100%
+  min-height: 100%
+  min-width: 320px
+  overflow-wrap: break-word
+  scroll-behavior: smooth
+
+  &.overflow
+    overflow: hidden
+
+.page-content
+  flex: 1 0 auto
+
+.container
+  margin-left: auto
+  margin-right: auto
+  max-width: 960px
+  padding-left: 10px
+  padding-right: 10px

@@ -1,0 +1,36 @@
+.button
+  background-color: transparent
+  border: 1px solid #00e0d0
+  border-radius: 2px
+  color: #00e0d0
+  cursor: pointer
+  display: inline-block
+  font-family: 'Open Sans', Arial, sans-serif
+  font-size: 16px
+  font-weight: 700
+  height: 40px
+  line-height: 18px
+  min-width: 120px
+  padding: 11px 7px
+  text-decoration: none
+  text-align: center
+  transition: background-color 0.3s, color 0.3s
+  vertical-align: middle
+
+  &--big
+    font-size: 20px
+    height: 56px
+
+  &:hover,
+  &:active,
+  &:focus
+    background-color: #00e0d0
+    color: #fff
+
+  &:disabled,
+  &.disabled
+    cursor: default
+    opacity: 0.5
+
+    &:focus
+      outline: none
